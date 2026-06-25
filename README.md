@@ -1,44 +1,27 @@
 # SweetHand Backend
 
-Backend for the SweetHand storefront, built with Django and Django REST Framework.
+Standalone Express API for the SweetHand diploma project.
 
-## Features
+## Stack
 
-- email/password registration and login
-- token authentication
-- profile endpoint
-- product catalog and categories
-- favorites
-- order creation and order history
-- feedback/contact form endpoint
-- admin panel
-- demo catalog seed command
+- Node.js
+- Express
+- Local JSON storage in `data/db.json`
 
-## Quick start
+## Setup
 
-Use any Python environment with Django and DRF installed, then:
-
-```powershell
-python manage.py migrate
-python manage.py seed_demo_data
-python manage.py createsuperuser
-python manage.py runserver
+```bash
+npm install
+npm start
 ```
 
-## API
+The server starts on `http://127.0.0.1:8000` by default. You can override the port with the `PORT` environment variable.
 
-- `POST /api/auth/register/`
-- `POST /api/auth/login/`
-- `POST /api/auth/logout/`
-- `GET/PATCH /api/auth/me/`
-- `GET /api/catalog/categories/`
-- `GET /api/catalog/products/`
-- `GET /api/catalog/products/<id>/`
-- `GET /api/catalog/favorites/`
-- `POST /api/catalog/favorites/`
-- `DELETE /api/catalog/favorites/<product_id>/`
-- `GET /api/orders/`
-- `POST /api/orders/`
-- `GET /api/orders/<id>/`
-- `POST /api/feedback/`
+## Demo Admin
 
+- Email: `admin@sweethand.local`
+- Password: `admin123`
+
+## Data
+
+On first start the API creates `data/db.json` from `data/catalogSeed.json`.

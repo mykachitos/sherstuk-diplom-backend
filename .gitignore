@@ -1,5 +1,4 @@
-.venv/
-__pycache__/
-*.py[cod]
-db.sqlite3
+node_modules/
+data/db.json
+npm-debug.log*
 *.log
