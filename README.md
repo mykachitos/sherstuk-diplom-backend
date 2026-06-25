@@ -26,6 +26,8 @@ For a Render web service, use:
 - Start Command: `npm start`
 - Health Check Path: `/api/health`
 
+Important: if Render logs show `Python 3.x` and `Poetry`, the service was created with the wrong runtime and `render.yaml` is not being applied to that deploy. Recreate the service as a `Node` web service or create it from the repository `render.yaml` as a Blueprint.
+
 ## Demo Admin
 
 - Email: `admin@sweethand.local`

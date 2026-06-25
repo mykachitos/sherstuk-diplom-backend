@@ -4,6 +4,9 @@
   "private": true,
   "description": "Express backend for the SweetHand diploma storefront",
   "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0 <22.0.0"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "node index.js"
